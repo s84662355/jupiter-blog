@@ -1,0 +1,21 @@
+syntax = "proto3";
+package response;
+option go_package = "JupiterBlog/micro/protobuf/response"; 
+import "google/protobuf/timestamp.proto";
+
+message ArticleInfo{
+   fixed32 id = 1;
+   string title = 2 ;
+   string content = 3 ;
+   fixed32 cate_id = 4 ;
+   fixed64 read_amount = 5 ;
+   sfixed32   sort = 6 ;
+   string created_at  = 7;
+   string updated_at  = 8;
+   string deleted_at  = 9;
+   fixed32 status = 10 ;
+   string image = 11 ;
+   string summary = 12 ;
+}
+
+ 

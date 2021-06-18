@@ -1,0 +1,11 @@
+syntax = "proto3";
+package service;
+option go_package = "JupiterBlog/micro/protobuf/service"; 
+import "protobuf/request/article.proto";
+import "protobuf/response/article.proto";
+service Article {
+ rpc  Info (request.ArticleInfo) returns (response.ArticleInfo);
+}
+
+
+ 
